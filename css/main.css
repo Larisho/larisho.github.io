@@ -46,3 +46,7 @@ a.nav-item {
 .no-border {
   border: none !important;
 }
+
+.testimonials p {
+  color: #a4acad;
+}
