@@ -60,3 +60,13 @@ a.nav-item {
 .instagram-btn:hover {
   border-bottom: 2px solid #adbcbb;
 }
+
+@media (max-width: 575px) {
+  .instagram-btn {
+    width: 30%;
+    position: absolute;
+    right: 0;
+    top: 3%;
+    z-index: 10;
+  }
+}
