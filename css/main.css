@@ -1,6 +1,4 @@
-@import url('fonts/Roboto-Thin.ttf');
-@import url('fonts/LibreBaskerville-Regular.ttf');
-@import url('fonts/WorkSans-Light.ttf');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:300|Roboto');
 
 .header {
   font-family: 'Libre Baskerville', serif;
@@ -36,7 +34,7 @@ a.nav-item {
 }
 
 .text-font {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Libre Baskerville', sans-serif;
 }
 
 .row img {
