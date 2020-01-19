@@ -1,70 +1,150 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:300|Roboto');
-
-.header {
-  font-family: 'Libre Baskerville', serif;
-  padding: 2rem 0 0;
-  width: auto;
+html {
+  height: 100%;
+  box-sizing: border-box;
 }
 
-.header h1 {
-  font-size: 3.2rem;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-.blue-color {
-  color: #adbcbb;
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
 }
 
-.move-down-a-bit {
-  padding-top: 1.5rem;
+.jumbotron-bg {
+  background: linear-gradient(rgba(127,127,127,0.3), rgba(127,127,127,0.3)), var(--image-url) var(--image-pos);
+  background-size: cover;
+
+  position: relative;
+  
+  height: 40rem;
 }
 
-a.nav-item {
-  font-family: 'Roboto', sans-serif;
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
+.jumbotron-bg-thin {
+  background: linear-gradient(rgba(127,127,127,0.3), rgba(127,127,127,0.3)), var(--image-url) var(--image-pos);
+  background-size: cover;
+
+  position: relative;
+
+  height: 20rem;
 }
 
-.active {
-  color: #adbcbb !important;
-  font-weight: bold;
+.group-beach {
+  --image-url: url(../img/group-beach-edited.jpg);
+  --image-pos: center center;
 }
 
-.align-nav-center {
-  margin: auto;
+.pad-ben {
+  --image-url: url(../img/ben-pad-edited.jpg);
+  --image-pos: 10% 42%;
 }
 
-.text-font {
-  font-family: 'Libre Baskerville', sans-serif;
+.ben-andy {
+  --image-url: url(../img/andy-ben-edited.jpg);
+  --image-pos: center 75%;
 }
 
-.row img {
-  border: 5px double #adbcbb;
+.pack-walk {
+  --image-url: url(../img/group-edited.jpg);
+  --image-pos: center 48%;
 }
 
-.no-border {
-  border: none !important;
+.rbb {
+  --image-url: url(../img/rudy-brandy-ben-edited.jpg);
+  --image-pos: center 43%;
 }
 
-.testimonials p {
-  color: #a4acad;
+.dog-lineup {
+  --image-url: url(../img/dog-lineup-edited.jpg);
+  --image-pos: center 65%;
 }
 
-.instagram-btn {
-  position: fixed;
+.brand-bg {
+  background-image: url(../img/logo-transparent.png);
+  background-size: cover;
+  background-position: center center;
+  width: 75px;
+  height: 75px;
+  z-index: 5;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero > h1 {
+  font-size: 5rem;
+}
+
+.clickable:hover {
+  background-color: lightgrey;
+}
+
+.link-overlay {
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+
+  z-index: 1;
+
+  /* fixes overlap error in IE7/8, 
+     make sure you have an empty gif */
+  background-image: url('empty.gif');
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.img-break {
+  display: inline;
+}
+
+.img-padding-fix {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.footer {
+  position: absolute;
   right: 0;
-  top: 3%;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: lightgrey;
+  text-align: center;
 }
 
-.instagram-btn:hover {
-  border-bottom: 2px solid #adbcbb;
-}
-
-@media (max-width: 575px) {
-  .instagram-btn {
-    width: 30%;
-    position: absolute;
-    right: 0;
-    top: 3%;
-    z-index: 10;
+@media (max-width: 600px) {
+  .img-break {
+    display: table;
   }
 }
+
+@media (min-width: 1100px) {
+  .overlap {
+    position: relative;
+    top: -50%;
+
+    width: 40%;
+    margin: auto;
+
+    border-color: black;
+  }
+}
+
+@media (max-width: 1099px) {
+  .jumbotron-bg-thin > .hero {
+    margin-top: 4rem;
+  }
+}
+
