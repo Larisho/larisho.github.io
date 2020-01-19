@@ -17,7 +17,7 @@ body {
 }
 
 .jumbotron-bg {
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), var(--image-url) var(--image-pos);
+  background: linear-gradient(rgba(127,127,127,0.3), rgba(127,127,127,0.3)), var(--image-url) var(--image-pos);
   background-size: cover;
 
   position: relative;
@@ -26,7 +26,7 @@ body {
 }
 
 .jumbotron-bg-thin {
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), var(--image-url) var(--image-pos);
+  background: linear-gradient(rgba(127,127,127,0.3), rgba(127,127,127,0.3)), var(--image-url) var(--image-pos);
   background-size: cover;
 
   position: relative;
@@ -41,7 +41,7 @@ body {
 
 .pad-ben {
   --image-url: url(../img/ben-pad-edited.jpg);
-  --image-pos: center 42%;
+  --image-pos: 10% 42%;
 }
 
 .ben-andy {
@@ -57,6 +57,11 @@ body {
 .rbb {
   --image-url: url(../img/rudy-brandy-ben-edited.jpg);
   --image-pos: center 43%;
+}
+
+.dog-lineup {
+  --image-url: url(../img/dog-lineup-edited.jpg);
+  --image-pos: center 65%;
 }
 
 .brand-bg {
@@ -102,6 +107,11 @@ body {
 
 .img-break {
   display: inline;
+}
+
+.img-padding-fix {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .footer {
